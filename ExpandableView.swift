@@ -58,6 +58,14 @@ final class ExpandableView: UIView {
     
     
     // MARK: Inititialization
+    convenience init(message: String, note: String) {
+        super.init(frame: CGRect.zero)
+        commonInit()
+        messageLabel.text = message
+        noteLabel.text = note
+        
+    }
+    
     init(frame: CGRect, message: String, note: String) {
         super.init(frame: frame)
         commonInit()
